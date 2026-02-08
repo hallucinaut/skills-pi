@@ -44,12 +44,13 @@ To use these skills with Pi:
 
 ```bash
 # Clone this repository
-git clone https://github.com/hallucinaut/skills-pi.git
+git clone https://github.com/hallucinaut/skills-pi.git ~/custom/agent/skills/
+rm -rf ~/custom/agent/skills/.git; rm -rf ~/custom/agent/skills/README.md
 
 # Add to your Pi settings
 # Create or edit ~/.pi/settings.json and add:
 # {
-#   "skills": ["~/.pi/skills"]
+#   "skills": ["~/custom/agent/skills"]
 # }
 ```
 
